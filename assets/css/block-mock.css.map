@@ -1,0 +1,1 @@
+{"version":3,"sources":["block-mock.scss"],"names":[],"mappings":"AAEA,S,CACE,oB,CAIF,yBACE,S,CACE,mB","file":"block-mock.css","sourcesContent":["@import '../common/variables.scss';\r\n\r\n.nav-mock {\r\n  min-height: 310px;\r\n}\r\n\r\n\r\n@media (min-width: $tablet-width) {\r\n  .nav-mock {\r\n    min-height: 72px;\r\n  }\r\n}"]}

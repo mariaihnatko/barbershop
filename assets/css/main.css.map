@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AACA,U,CACE,iB","file":"main.css","sourcesContent":["@import '../common/variables.scss';\r\n.page-main {\r\n  position: relative;\r\n}\r\n"]}
