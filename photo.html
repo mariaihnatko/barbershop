@@ -242,53 +242,57 @@
 <!--                                  modal windows               -->
 <!--                                  Log in                        -->
 <div class="login-form none">
-  <div class="login-form__wrapper">
-    <span class="login-form__closed">Закрыть</span>
-    <h2 class="login-form__title">Личный кабинет</h2>
-    <span class="login-form__subtitle">Введите свой логин и пароль, чтобы войти</span>
-    <input class="login-form__login" type="text" placeholder="Логин">
-    <input class="login-form__password" type="password" placeholder="Пароль">
-    <input type="checkbox">
-    <div class="login-form__for-user"> 
-        <label class="login-form__remember form__container">Запомните меня
-            <input type="checkbox">
-            <span class="login-form__checkmark"></span>
-          </label>
-<!-- 
-      <label class="login-form__remember">
-        <p>Запомните меня</p>
-        <input type="checkbox">
-        <span class="form__checkmark"></span>
-      </label>
--->
-      <a class="login-form__forget">Я забыл пароль!</a>
+  <mask class="login-form__mask">
+    <div class="login-form__wrapper">
+      <span class="login-form__closed">Закрыть</span>
+      <h2 class="login-form__title">Личный кабинет</h2>
+      <span class="login-form__subtitle">Введите свой логин и пароль, чтобы войти</span>
+      <input class="login-form__login" type="text" placeholder="Логин">
+      <input class="login-form__password" type="password" placeholder="Пароль">
+      <input type="checkbox">
+      <div class="login-form__for-user"> 
+          <label class="login-form__remember form__container">Запомните меня
+              <input type="checkbox">
+              <span class="login-form__checkmark"></span>
+            </label>
+  <!-- 
+        <label class="login-form__remember">
+          <p>Запомните меня</p>
+          <input type="checkbox">
+          <span class="form__checkmark"></span>
+        </label>
+  -->
+        <a href="#" class="login-form__forget">Я забыл пароль!</a>
+      </div>
+      <button class="login-form__button">Войти <span>в личный кабинет</span></button>
     </div>
-    <div class="login-form__button">Войти <span>в личный кабинет</span></div>
-  </div>
+  </mask>
 </div>
 <!--                                  failure pop up                        -->
 <div class="fail-pop-up none">
-  <div class="fail-pop-up__wrapper">
-      <h2 class="fail-pop-up__title login-form__title">НЕУДАЧА</h2>
-      <span class="fail-pop-up__subtitle">Что-то пошло не так. </span>
-      <span class="fail-pop-up__subtitle">Проверьте выделенные </span>
-      <span class="fail-pop-up__subtitle">красным поля формы.</span>
-      <div class="fail-pop-up__button">OK</div>
-  </div>
+  <mask class="fail-pop-up__mask">
+    <div class="fail-pop-up__wrapper">
+        <h2 class="fail-pop-up__title login-form__title">НЕУДАЧА</h2>
+        <span class="fail-pop-up__subtitle">Что-то пошло не так. </span>
+        <span class="fail-pop-up__subtitle">Проверьте выделенные </span>
+        <span class="fail-pop-up__subtitle">красным поля формы.</span>
+        <button class="fail-pop-up__button">OK</button>
+    </div>
+  </mask>
 </div>
 <!--                                   success pop up                           -->
 <div class="success-pop-up none">
-  <div class="success-pop-up__wrapper">
-      <h2 class="success-pop-up__title login-form__title">ЭТО УСПЕХ!</h2>
-      <span class="success-pop-up__subtitle">Ваша заявка отправлена.</span> 
-      <span class="success-pop-up__subtitle"> Ожидайте, мы свяжемся с вами как только </span>
-      <span class="success-pop-up__subtitle">будет минутка.</span>
-      <div class="success-pop-up__button">ЗАКРЫТЬ ОКНО</div>
-  </div>
+  <mask class="success-pop-up__mask">
+    <div class="success-pop-up__wrapper">
+        <h2 class="success-pop-up__title login-form__title">ЭТО УСПЕХ!</h2>
+        <span class="success-pop-up__subtitle">Ваша заявка отправлена.</span> 
+        <span class="success-pop-up__subtitle"> Ожидайте, мы свяжемся с вами как только </span>
+        <span class="success-pop-up__subtitle">будет минутка.</span>
+        <button class="success-pop-up__button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </mask>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
 

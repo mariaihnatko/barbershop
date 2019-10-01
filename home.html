@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="assets/css/vendor.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
 </head>
 <body>
   <header class="page-header">
@@ -64,7 +65,7 @@
       <header class="stats__header">
         <h2 class="stats__title visually-hidden">Статистика Барбершопа</h2>
         <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
-        <p class="stats__intro">Мужская стрижка требует точного подхода. Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
         <small class="stats__legend stats__legend--top">
           <sup>*</sup> — приведённые данные ложь
         </small>
@@ -113,24 +114,19 @@
     <div class="advantages__wrapper slider">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list slider__list">
-        <li class="advantages__item advantages__item--fast slider__item block">
+        <li class="advantages__item advantages__item--fast slider__item item">
           <h3 class="advantages__title">Быстро</h3>
           <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
         </li>
-        <li class="advantages__item advantages__item--cool slider__item none">
+        <li class="advantages__item advantages__item--cool slider__item item">
           <h3 class="advantages__title">Круто</h3>
           <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
         </li>
-        <li class="advantages__item advantages__item--price slider__item none">
+        <li class="advantages__item advantages__item--price slider__item item">
           <h3 class="advantages__title">Дорого</h3>
           <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
         </li>
       </ul>
-      <p class="advantages__toggles slider__toggles">
-        <span class="slider__toggle active">0</span>
-        <span class="slider__toggle">1</span>
-        <span class="slider__toggle">2</span>
-      </p>
     </div>
   </section>
 
@@ -162,44 +158,40 @@
   </section>
 
   <section class="reviews">
-    <div class="reviews__wrapper slider">
+    <div class="reviews__wrapper slider ">
       <h2 class="reviews__title">Отзывы о нас</h2>
       <a class="reviews__write button">Оставить свой</a>
-      <div id="slider" class="reviews__list  slider__list slider">
-        <blockquote class="reviews__item block slider__item">
-          <button class="slider-arrow slider-arrow--left" type="button"></button>
-          <div class="reviews__body block">
+      <div class="owl-bottom owl-carousel owl-theme">
+        <div class="item"> 
+          <div class="reviews__body">
             <p class="reviews__author-picture">
-              <img class="reviews__author-image" src="./assets/images/foto-desktop.png" width="50" height="33" alt="Фото Трэвиса Баркера">
+              <img class="reviews__author-image" src="./assets/images/foto-desktop.png" alt="Фото Трэвиса Баркера">
             </p>
             <cite class="reviews__author-name">Трэвис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </div>
-          <div class="reviews__body none">
-            <p class="reviews__author-picture">
-              <img class="reviews__author-image" src="./assets/images/foto-desktop.png" width="50" height="33" alt="Фото Джона Смита">
+        </div>
+        <div class="item">
+          <div class="reviews__body">
+            <p class="reviews__author-picture"> 
+              <img class="reviews__author-image" src="./assets/images/foto-desktop.png"alt="Фото Джона Смита">
             </p>
             <cite class="reviews__author-name">Джон Смит</cite>
             <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
           </div>
-          <div class="reviews__body none">
-            <p class="reviews__author-picture">
-              <img class="reviews__author-image" src="./assets/images/foto-desktop.png" width="50" height="33" alt="Фото Ивана Бородайло">
-            </p>
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
-          </div>
-          <button class="slider-arrow slider-arrow--right" type="button"></button>
-        </blockquote>
+        </div>
+        <div class="item">
+            <div class="reviews__body">
+              <p class="reviews__author-picture">
+                <img class="reviews__author-image" src="./assets/images/foto-desktop.png" alt="Фото Ивана Бородайло">
+              </p>
+              <cite class="reviews__author-name">Иван Бородайло</cite>
+              <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
+            </div> 
+        </div>
       </div>
-      <p class="reviews__toggles slider__toggles">
-        <span class="slider__toggle active-second">0</span>
-        <span class="slider__toggle">1</span>
-        <span class="slider__toggle">2</span>
-      </p>
     </div>
   </section>
-
 </main>
 
 <footer id="footer" class="page-footer">
@@ -232,53 +224,57 @@
 <!--                                  modal windows               -->
 <!--                                  Log in                        -->
 <div class="login-form none">
-  <div class="login-form__wrapper">
-    <span class="login-form__closed">Закрыть</span>
-    <h2 class="login-form__title">Личный кабинет</h2>
-    <span class="login-form__subtitle">Введите свой логин и пароль, чтобы войти</span>
-    <input class="login-form__login" type="text" placeholder="Логин">
-    <input class="login-form__password" type="password" placeholder="Пароль">
-    <input type="checkbox">
-    <div class="login-form__for-user"> 
-        <label class="login-form__remember form__container">Запомните меня
-            <input type="checkbox">
-            <span class="login-form__checkmark"></span>
-          </label>
-<!-- 
-      <label class="login-form__remember">
-        <p>Запомните меня</p>
-        <input type="checkbox">
-        <span class="form__checkmark"></span>
-      </label>
--->
-      <a class="login-form__forget">Я забыл пароль!</a>
+  <mask class="login-form__mask">
+    <div class="login-form__wrapper">
+      <span class="login-form__closed">Закрыть</span>
+      <h2 class="login-form__title">Личный кабинет</h2>
+      <span class="login-form__subtitle">Введите свой логин и пароль, чтобы войти</span>
+      <input class="login-form__login" type="text" placeholder="Логин">
+      <input class="login-form__password" type="password" placeholder="Пароль">
+      <input type="checkbox">
+      <div class="login-form__for-user"> 
+          <label class="login-form__remember form__container">Запомните меня
+              <input type="checkbox">
+              <span class="login-form__checkmark"></span>
+            </label>
+  <!-- 
+        <label class="login-form__remember">
+          <p>Запомните меня</p>
+          <input type="checkbox">
+          <span class="form__checkmark"></span>
+        </label>
+  -->
+        <a href="#" class="login-form__forget">Я забыл пароль!</a>
+      </div>
+      <button class="login-form__button">Войти <span>в личный кабинет</span></button>
     </div>
-    <div class="login-form__button">Войти <span>в личный кабинет</span></div>
-  </div>
+  </mask>
 </div>
 <!--                                  failure pop up                        -->
 <div class="fail-pop-up none">
-  <div class="fail-pop-up__wrapper">
-      <h2 class="fail-pop-up__title login-form__title">НЕУДАЧА</h2>
-      <span class="fail-pop-up__subtitle">Что-то пошло не так. </span>
-      <span class="fail-pop-up__subtitle">Проверьте выделенные </span>
-      <span class="fail-pop-up__subtitle">красным поля формы.</span>
-      <div class="fail-pop-up__button">OK</div>
-  </div>
+  <mask class="fail-pop-up__mask">
+    <div class="fail-pop-up__wrapper">
+        <h2 class="fail-pop-up__title login-form__title">НЕУДАЧА</h2>
+        <span class="fail-pop-up__subtitle">Что-то пошло не так. </span>
+        <span class="fail-pop-up__subtitle">Проверьте выделенные </span>
+        <span class="fail-pop-up__subtitle">красным поля формы.</span>
+        <button class="fail-pop-up__button">OK</button>
+    </div>
+  </mask>
 </div>
 <!--                                   success pop up                           -->
 <div class="success-pop-up none">
-  <div class="success-pop-up__wrapper">
-      <h2 class="success-pop-up__title login-form__title">ЭТО УСПЕХ!</h2>
-      <span class="success-pop-up__subtitle">Ваша заявка отправлена.</span> 
-      <span class="success-pop-up__subtitle"> Ожидайте, мы свяжемся с вами как только </span>
-      <span class="success-pop-up__subtitle">будет минутка.</span>
-      <div class="success-pop-up__button">ЗАКРЫТЬ ОКНО</div>
-  </div>
+  <mask class="success-pop-up__mask">
+    <div class="success-pop-up__wrapper">
+        <h2 class="success-pop-up__title login-form__title">ЭТО УСПЕХ!</h2>
+        <span class="success-pop-up__subtitle">Ваша заявка отправлена.</span> 
+        <span class="success-pop-up__subtitle"> Ожидайте, мы свяжемся с вами как только </span>
+        <span class="success-pop-up__subtitle">будет минутка.</span>
+        <button class="success-pop-up__button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </mask>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
 
