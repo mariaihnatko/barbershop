@@ -1,0 +1,326 @@
+@import '../common/variables';
+.foto {
+  position: relative;
+  padding-top: 25px;
+  color: #000;
+  background-color: #f8f5f2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    display: block;
+    width: 100%;
+    height: 36px;
+    background-color: #f8f5f2;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    z-index: 10;
+  }
+}
+
+.foto__wrapper {
+  width: auto;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-item {
+  border: 1px solid #e6ded6;
+  margin-bottom: 22px;
+}
+
+.foto-item__img {
+  width: -webkit-fill-available;
+}
+
+.foto__list {
+  list-style: none;
+  padding: 0;
+}
+
+.foto-item__blockquote {
+  margin: 0;
+}
+
+.foto-item__description {
+  padding: 0 20px;
+}
+
+.foto-item__parameter-list {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin: 10px;
+  width: 100%;
+}
+
+.foto-item__parameter {
+  position: relative;
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-right: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 46px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translate(-127%,-50%);
+  }
+}
+
+.foto-item__parameter--hair {
+  float: left;
+  margin-left: 40px;
+
+  &::before {
+    background-image: url('../../assets/images/scissors-icon.png');
+  }
+}
+
+.foto-item__parameter--shaving {
+  float: right;
+  margin-left: 40px;
+
+  &::before{
+    background-image: url('../../assets/images/beard-icon.png');
+  }
+}
+
+.foto-item__parameter--mustache {
+  float: left;
+  margin-left: 40px;
+
+  &::before{
+    background-image: url('../../assets/images/mustache-icon.png');
+  }
+}
+
+.foto-item__parameter-list--Vl {
+  .foto-item__parameter--shaving::before {
+    float: left;
+  }
+
+  .foto-item__parameter--mustache::before {
+    float: right;
+  }
+}
+
+.fotos__button {
+  display: none;
+}
+
+.foto-item__image {
+  position: relative;
+}
+
+.foto-item__label {
+  background-image: url(./../images/label.png);
+  background-repeat: no-repeat;
+  width: 176px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+
+  .fotos__button {
+    display: block;
+  }
+
+  .foto__wrapper {
+    max-width: 640px;
+    position: relative;
+  }
+
+  .foto-item {
+    display: flex;
+  }
+
+  .foto-item__image {
+    flex: 1;
+  }
+  
+  .foto-item__description {
+    flex: 1;
+  }
+
+  .foto-item__description {
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .fotos__title {
+    text-transform: uppercase;
+    left: 0;
+    position: absolute;
+  }
+
+  .foto__list {
+    margin-top: 100px;
+  }
+
+  .foto-item__parameter-list {
+    margin-top: 87%;
+  }
+
+  .foto-item__parameter-list.one-parameter {
+    margin-top: 35%;
+  }
+
+  .foto-item__parameter-list--Vl {
+    .foto-item__parameter--mustache {
+      float: right;
+    }
+  
+    .foto-item__parameter--shaving {
+      float: left;
+    }
+  }
+
+  .foto-item__label {
+    top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .foto__wrapper {
+    max-width: 960px;
+    position: relative;
+  }
+
+  .foto-item {
+    width: 294px;
+    height: 544px;
+  }
+
+  .foto-item__img {
+    height: 100%;
+  }
+
+  .foto-item__image {
+    position: initial;
+  }
+
+  .foto-item__label {
+    right: 0;
+    background-image: url(./../images/right-label.png);
+  }
+
+  .foto-item.second {
+    float: left;
+    margin-right: 40px;
+    flex-direction: column;
+
+    .foto-item__text {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .foto-item__parameter-list {
+      margin-top: 20%;
+    }
+  }
+
+  .foto-item.third {
+    float: left;
+    flex-direction: column;
+
+    .foto-item__text {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .foto-item.fourth {
+    float: right;
+    flex-direction: column;
+
+    .foto-item__text {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .foto-item__parameter-list {
+      margin-top: 9%;
+    }
+  }
+
+  .foto-item--main {
+    width: 100%;
+    height: 480px;
+    position: relative;
+  }
+
+  .foto__list {
+    width: 100%;
+  }
+
+  .foto-item__description {
+    padding: 10px 25px;
+  }
+
+  .foto::after {
+    display: none;
+  }
+
+  .foto-item__text {
+    width: 65%;
+    margin-top: 20%;
+  }
+
+  .foto-item__parameter-list {
+    margin-top: 25%;
+    width: 75%;
+  }
+
+  .foto-item__parameter--mustache {
+    float: right;
+  }
+
+  .foto-item__parameter--shaving {
+    float: left;
+    margin-left: 58px;
+  }
+
+  .foto-item__parameter-list.one-parameter {
+    margin-top: 32%;
+  }
+
+  .foto-item__parameter-list--Vl {
+    width: 100%;
+
+    .foto-item__parameter--mustache {
+      float: right;
+      width: 25%;
+      margin-left: 0;
+    }
+  
+    .foto-item__parameter--shaving {
+      float: left;
+      width: 25%;
+      margin-left: 30px;
+    }
+  }
+}

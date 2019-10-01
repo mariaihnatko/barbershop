@@ -1,0 +1,86 @@
+<footer id="footer" class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__contacts contacts">
+      <b class="contacts__title">Барбершоп «Бородинский»</b>
+      <p class="contacts__text">
+        г. Санкт-Петербург, ул. Большая <br>
+        Конюшенная 19/8<br>
+        <a class="contacts__phone button" href="tel:+78125556666">
+          <span class="contacts__phone-mobile">Тел:</span> +7 (812) 555-66-66
+        </a>
+      </p>
+    </div>
+    <div class="page-footer__social social">
+      <b class="social__title">Давайте дружить!</b>
+      <span class="social__list">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </span>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer><!--footer-->
+
+<!--                                  modal windows               -->
+<!--                                  Log in                        -->
+<div class="login-form none">
+  <mask class="login-form__mask">
+    <div class="login-form__wrapper">
+      <span class="login-form__closed">Закрыть</span>
+      <h2 class="login-form__title">Личный кабинет</h2>
+      <span class="login-form__subtitle">Введите свой логин и пароль, чтобы войти</span>
+      <input class="login-form__login" type="text" placeholder="Логин">
+      <input class="login-form__password" type="password" placeholder="Пароль">
+      <input type="checkbox">
+      <div class="login-form__for-user"> 
+          <label class="login-form__remember form__container">Запомните меня
+              <input type="checkbox">
+              <span class="login-form__checkmark"></span>
+            </label>
+  <!-- 
+        <label class="login-form__remember">
+          <p>Запомните меня</p>
+          <input type="checkbox">
+          <span class="form__checkmark"></span>
+        </label>
+  -->
+        <a href="#" class="login-form__forget">Я забыл пароль!</a>
+      </div>
+      <button class="login-form__button">Войти <span>в личный кабинет</span></button>
+    </div>
+  </mask>
+</div>
+<!--                                  failure pop up                        -->
+<div class="fail-pop-up none">
+  <mask class="fail-pop-up__mask">
+    <div class="fail-pop-up__wrapper">
+        <h2 class="fail-pop-up__title login-form__title">НЕУДАЧА</h2>
+        <span class="fail-pop-up__subtitle">Что-то пошло не так. </span>
+        <span class="fail-pop-up__subtitle">Проверьте выделенные </span>
+        <span class="fail-pop-up__subtitle">красным поля формы.</span>
+        <button class="fail-pop-up__button">OK</button>
+    </div>
+  </mask>
+</div>
+<!--                                   success pop up                           -->
+<div class="success-pop-up none">
+  <mask class="success-pop-up__mask">
+    <div class="success-pop-up__wrapper">
+        <h2 class="success-pop-up__title login-form__title">ЭТО УСПЕХ!</h2>
+        <span class="success-pop-up__subtitle">Ваша заявка отправлена.</span> 
+        <span class="success-pop-up__subtitle"> Ожидайте, мы свяжемся с вами как только </span>
+        <span class="success-pop-up__subtitle">будет минутка.</span>
+        <button class="success-pop-up__button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </mask>
+</div>
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

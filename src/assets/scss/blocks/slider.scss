@@ -1,0 +1,235 @@
+@import '../common/variables.scss';
+
+.owl-carousel {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10px;
+  font-size: 0;
+}
+
+.owl-carousel > .owl-dots > .owl-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #a5a5a5;
+  background: transparent;
+  transform: rotate(45deg);
+  margin-right: 20px;
+}
+
+.owl-dots > .owl-dot.active {
+  background: #353535;
+}
+
+.advantages__list > .owl-dots > .owl-dot.active {
+  background: white;
+}
+
+.slider__toggles {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10px;
+  font-size: 0;
+}
+
+.slider__toggle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #a5a5a5;
+  background: transparent;
+  transform: rotate(45deg);
+  margin-right: 20px;
+}
+
+.slider__toggle.active {
+  background: white;
+}
+
+.slider__toggle.active-second {
+  background: #353535;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: -1px;
+  display: none;
+  width: 50px;
+  height: calc(100% + 2px);
+  font-size: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #e5ddd5;
+  outline: none;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: .1s;
+
+  &:hover {
+    border-color: #d5c9bd;
+  }
+
+  &:active {
+    background-color: #d5c9bd;
+  }
+}
+
+.slider-arrow--left {
+  left: -51px;
+  background-image: url("./../images/left-arrow.png");
+  border-right: none;
+}
+
+.slider-arrow--right {
+  right: -51px;
+  background-image: url("./../images/right-arrow.png");
+  border-left: none;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  margin: 0px 5px;
+}
+
+.owl-carousel.owl-top.owl-drag .owl-item {
+ max-width: 320px;
+ width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+
+.owl-carousel .owl-stage-outer {
+  padding-left: 140px;
+  padding-right: 20px;
+  margin: 0 50px;
+  border: 1px solid #e5ddd5;
+  height: 158px!important;
+}
+
+.reviews__wrapper > .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 160px;
+  font-size: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #e5ddd5;
+  outline: none;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: .1s;
+  left: 0px;
+  top: 0px;
+  background-image: url("./../images/left-arrow.png");
+  border-right: none;
+
+  &:hover {
+    border-color: #d5c9bd;
+  }
+
+  &:active {
+    background-color: #d5c9bd;
+  }
+}
+
+.reviews__wrapper > .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 160px;
+  font-size: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #e5ddd5;
+  outline: none;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: .1s;
+  top: 0px;
+  right: 0px;
+  background-image: url("./../images/right-arrow.png");
+  border-left: none;
+
+  &:hover {
+    border-color: #d5c9bd;
+  }
+
+  &:active {
+    background-color: #d5c9bd;
+  }
+}
+
+  .owl-nav {
+    display: block;
+  }
+
+  .slider-arrow {
+    display: block;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    margin-top: 25px;
+  }
+
+  .owl-dots {
+    margin-top: -16px;
+    width: 120px;
+    position: absolute;
+    left: 40%;
+    z-index: 40;
+    background-color: white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-arrow--left {
+    left: -70px;
+    border-right: 1px solid #ccc;
+  }
+
+  .slider-arrow--right {
+    right: -70px;
+    border-left: 1px solid #ccc;
+  }
+
+  .advantages__item.advantages__item--fast.slider__item.block {
+    display: table-cell!important;
+  }
+
+  .owl-dots {
+    margin-top: 40px;
+  }
+
+  .reviews__wrapper > .owl-carousel .owl-nav button.owl-prev {
+    left: -20px;
+    border-right: 1px solid #ccc;
+  }
+
+  .reviews__wrapper > .owl-carousel .owl-nav button.owl-next {
+    right: -20px;
+    border-left: 1px solid #ccc;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    margin-left: -4px;
+  }
+}

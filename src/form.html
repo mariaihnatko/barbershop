@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="assets/css/vendor.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo--foto">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="assets/images/logotype-desktop.png">
+        <source media="(min-width: 768px)" srcset="assets/images/logotype-tablet.png">
+        <img class="page-header__image" src="assets/images/logotype-mobile.png" alt="Logo">
+      </picture>
+<!--
+      <span class="svg-container"> 
+        <img width="100%" src="assets/images/svg-sprite.svg">
+      </span>
+-->
+    </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="home.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+                <a href="photo.html">Наши работы</a>
+            </li>
+            <li class="site-list__item">
+                <a href="form.html">Записаться</a>
+            </li>
+            <li class="site-list__item">
+                <a href="#">Контакты</a>
+            </li>
+            <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login" href="#">
+                <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
+                Войти
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main class="main">
+    <section class="form">
+      <div class="form__wrapper">
+          <h2 class="form__title">Запись на стрижку</h2>
+          <a href="home.html" class="news__to-all button fotos__button">На главную</a>
+        <form id="form" class="form__inputs">
+            <input id="lastname" class="form__item" name="name" type="text" placeholder="Фамилия">
+            <input id="name"class="form__item" name="name" type="text" placeholder="Имя">
+            <input id="surname" class="form__item" name="name" type="text" placeholder="Отчество">
+          <input id="phone" class="form__item" type="tel" placeholder="Контактный телефон">
+          <input id="email" class="form__item" type="email" placeholder="Контактный e-mail">
+          <textarea class="form__comment" type="text" placeholder="Доп. информация для мастера"></textarea>
+        </form>
+        <h3 class="form__suptitle">ВЫберите модель бороды:</h3>
+
+        <form class="form__choice"" action="#">
+            <div class="form__items">
+              <input type="radio" id="test1" name="radio-group" checked>
+              <label for="test1"></label>
+              <p class="form__text">адмирал</p>
+              <img class="form__image" src="assets/images/beard-1.png" alt="адмирал"/>
+            </div>
+            <div class="form__items">
+                <input type="radio" id="test2" name="radio-group" checked>
+                <label for="test2"></label>
+                <p class="form__text">лесоруб</p>
+                <img class="form__image" src="assets/images/beard-2.png" alt="лесоруб"/>
+            </div>
+            <div class="form__items">
+              <input type="radio" id="test3" name="radio-group" checked>
+              <label for="test3"></label>
+              <p class="form__text">полярник</p>
+              <img class="form__image" src="assets/images/beard-3.png" alt="полярник"/>
+            </div>
+            <div class="form__items">
+              <input type="radio" id="test4" name="radio-group" checked>
+              <label for="test4"></label>
+              <p class="form__text">боярин</p>
+              <img class="form__image" src="assets/images/beard-4.png" alt="боярин"/>
+            </div>
+            <div class="form__items">
+              <input type="radio" id="test5" name="radio-group" checked>
+              <label for="test5"></label>
+              <p class="form__text">мудрец</p>
+              <img class="form__image" src="assets/images/beard-5.png" alt="мудрец"/>
+            </div>
+        </form>
+        <h3 class="form__suptitle">Дополнительные услуги:</h3>
+
+        <div class="form__option">
+          <label class="form__container">Подкрасить бороду
+            <input type="checkbox" checked="checked">
+            <span class="form__checkmark"></span>
+          </label>
+          <label class="form__container">Накрутить усы
+            <input type="checkbox">
+            <span class="form__checkmark"></span>
+          </label>
+          <label class="form__container">Причесать бороду
+            <input type="checkbox">
+            <span class="form__checkmark"></span>
+          </label>
+          <label class="form__container">Подровнять виски
+            <input type="checkbox">
+            <span class="form__checkmark"></span>
+          </label>
+          <label class="form__container">Убрать седину
+            <input type="checkbox">
+            <span class="form__checkmark"></span>
+          </label>
+          <label class="form__container">Отполировать лысину
+            <input type="checkbox">
+            <span class="form__checkmark"></span>
+          </label>
+        </div>
+        <a class="form__button">Отправить заявку</a>
+      </div>
+    </section>
+  </main>
+
+@@include('./templates/footer.html')

@@ -1,0 +1,249 @@
+@import '../common/variables.scss';
+.page-footer {
+  padding-top: 35px;
+  padding-bottom: 23px;
+  background-color: #292929;
+  padding-top: 80px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #353535;
+  }
+}
+
+.page-footer__contacts b {
+  display: block;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contacts__phone {
+  width: auto;
+  margin: 0 20px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #3e3e3e;
+
+  .contacts__phone-mobile {
+    font-size: 0;
+  }
+
+  &:active {
+    background-color: #252525;
+    color: #7d7d7d;
+    border: none;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+
+  &:active {
+    background-color: #252525;
+    color: #7d7d7d;
+    border: none;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 106px;
+  height: 100px;
+  border: 1px solid #3f3f3f;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__item {
+  display: block;
+  width: 106px;
+  height: 100px;
+  border: 1px solid #3f3f3f;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte {
+  background-image: url('./../images/vk-icon-big.png');
+}
+
+.social__link--facebook {
+  background-image: url('./../images/facebook-icon-big.png');
+}
+
+.social__link--instagram {
+  background-image: url('./../images/insta-icon-big.png');
+}
+
+.social__title {
+  font-size: 0;
+}
+
+.copyright__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.copyright__link {
+  color: #fff;
+  border: 1px solid #3e3e3e;
+  padding: 15px 10px;
+  margin: 15px 20px;
+
+  &:active {
+    background-color: #252525;
+    color: #7d7d7d;
+    border: none;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+    max-width: 640px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .page-footer__contacts {
+    order: 1;
+    width: 330px;
+    text-align: left;
+  }
+
+  .contacts__title {
+    padding-top: 0;
+    text-transform: uppercase;
+  }
+
+  .contacts__phone {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    border: none;
+  }
+
+  .page-footer__social {
+    order: 3;
+    width: 100%;
+  }
+
+  .social__link {
+    width: 35%;
+  }
+
+  .page-footer__copyright {
+    width: 25%;
+    margin-top: 25px;
+  }
+
+  .copyright__link {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) { 
+  .page-footer__social {
+    width: 30%;
+    margin-top: 25px;
+  }
+
+  .social__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .page-footer__wrapper {
+    flex-direction: row;
+    width: 84%;
+    max-width: 60rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+  }
+
+  .page-footer__contacts {
+    order: 1;
+  }
+
+  .page-footer__social {
+    order: 2;
+    width: 20%;
+  }
+
+  .page-footer__copyright {
+    order: 3;
+    min-width: 160px;
+    width: auto;
+  }
+
+  .social__link {
+    width: 56px;
+    height: 56px;
+  }
+
+  .social__link--vkontakte {
+    background-image: url('./../images/vk-icon-small.png');
+  }
+  
+  .social__link--facebook {
+    background-image: url('./../images/facebook-icon-small.png');
+  }
+  
+  .social__link--instagram {
+    background-image: url('./../images/insta-icon-small.png');
+  }
+
+  .contacts__text {
+    br {
+      display: none;
+    }
+  }
+
+  .contacts__phone .contacts__phone-mobile {
+    font-size: 18px;
+    text-transform: none;
+  }
+  
+  .social__list {
+    margin-top: 10px;
+  }
+
+  .button.copyright__link {
+    margin-top: 10px;
+  }
+}
+

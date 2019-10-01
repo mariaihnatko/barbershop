@@ -1,0 +1,70 @@
+@import 'variables';
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: $bg-darkgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  border: 1px solid #e5ddd5;
+  transition-property: border-color, background-color, color;
+  transition-duration: .3s;
+
+  &:hover {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active {
+   background-color: #d5c9bd;
+   color: #958c84;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block!important;
+}
+
+.empty-field {
+  border: 2px solid red!important;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="assets/css/vendor.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="page-header">
+      <a class="page-header__logo--foto">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="assets/images/logotype-desktop.png">
+          <source media="(min-width: 768px)" srcset="assets/images/logotype-tablet.png">
+          <img class="page-header__image" src="assets/images/logotype-mobile.png" alt="Logo">
+        </picture>
+<!--
+        <span class="svg-container"> 
+          <img width="100%" src="assets/images/svg-sprite.svg">
+        </span>
+ -->
+      </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="home.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                  <a href="photo.html">Наши работы</a>
+              </li>
+              <li class="site-list__item">
+                  <a href="form.html">Записаться</a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">Контакты</a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__login" href="#">
+                  <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <div class="block-mock"></div>
+  <main class="main">
+    <section class="foto">
+        <div class="foto__wrapper">
+            <h2 class="fotos__title">Наши работы</h2>
+            <a href="home.html" class="news__to-all button fotos__button">На главную</a>
+            <ul class="foto__list">
+              <li class="foto-item foto-item--main">
+                <div class="foto-item__image">
+                  <div class="foto-item__label">Работа месяца</div>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/images/photo-1-desktop.png">
+                    <source media="(min-width: 768px)" srcset="assets/images/photo-1-tablet.png">
+                    <img class="foto-item__img" src="assets/images/photo-1-mobile.png" alt="Наша робота">
+                  </picture>
+                </div>
+                <div class="foto-item__description">
+                  <div class="foto-item__text">
+                    <h3 class="foto-item__title">Лжепётр Мчиславский</h3>
+                    <blockquote class="foto-item__blockquote">
+                      Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+                    </blockquote>
+                  </div>
+                  <ul class="foto-item__parameter-list">
+                    <li class="foto-item__parameter  foto-item__parameter--hair">Стрижка</li>
+                    <li class="foto-item__parameter  foto-item__parameter--shaving">Бритьё</li>
+                    <li class="foto-item__parameter  foto-item__parameter--mustache">Усы</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="foto-item second">
+                  <div class="foto-item__image">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="assets/images/photo-2-desktop.png">
+                      <source media="(min-width: 768px)" srcset="assets/images/photo-2-tablet.png">
+                      <img class="foto-item__img" src="assets/images/photo-2-mobile.png" alt="Наша робота">
+                    </picture>
+                  </div>
+                  <div class="foto-item__description">
+                    <div class="foto-item__text">
+                      <h3 class="foto-item__title">Саша Мальцев</h3>
+                      <blockquote class="foto-item__blockquote">
+                          Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? 
+                      </blockquote>
+                    </div>
+                    <ul class="foto-item__parameter-list one-parameter">
+                      <li class="foto-item__parameter  foto-item__parameter--hair">Стрижка</li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="foto-item third">
+                  <div class="foto-item__image">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="assets/images/photo-3-desktop.png">
+                      <source media="(min-width: 768px)" srcset="assets/images/photo-3-tablet.png">
+                      <img class="foto-item__img" src="assets/images/photo-3-mobile.png" alt="Наша робота">
+                    </picture>
+                  </div>
+                  <div class="foto-item__description">
+                    <div class="foto-item__text">
+                      <h3 class="foto-item__title">Владимир Иваныч</h3>
+                      <blockquote class="foto-item__blockquote">
+                          К зимнему сезону — готов!
+                      </blockquote>
+                    </div>
+                    <ul class="foto-item__parameter-list foto-item__parameter-list--Vl one-parameter">
+                        <li class="foto-item__parameter foto-item__parameter-list--Vl foto-item__parameter--shaving">Борода</li>
+                        <li class="foto-item__parameter foto-item__parameter-list--Vl foto-item__parameter--mustache">Усы</li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="foto-item fourth">
+                  <div class="foto-item__image">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="assets/images/photo-4-desktop.png">
+                      <source media="(min-width: 768px)" srcset="assets/images/photo-4-tablet.png">
+                      <img class="foto-item__img" src="assets/images/photo-4-mobile.png" alt="Наша робота">
+                    </picture>
+                  </div>
+                  <div class="foto-item__description">
+                    <div class="foto-item__text">
+                      <h3 class="foto-item__title">Винстон Синий</h3>
+                      <blockquote class="foto-item__blockquote">
+                          Как только заростаю и волосы начинают мешать видеть — бегом в Бородинський
+                      </blockquote>
+                    </div>
+                    <ul class="foto-item__parameter-list one-parameter">
+                      <li class="foto-item__parameter  foto-item__parameter--hair">Стрижка</li>
+                    </ul>
+                  </div>
+              </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="price">
+      <div class="price__wrapper">
+        <h2 class="fotos__title">ПРЕЙСКУРАНТ</h2>
+        <table class="prices">
+          <tr>
+            <td class="tablet number">1</td>
+            <td><b>Классическая стрижка</b> </td>
+            <td class="tablet">(с мытьём головы)</td>
+            <td>1 500 руб.</td>
+            <tr class="prices__mobile">
+              <td>(с мытьём головы)</td>
+            </tr>
+          </tr>
+          <tr>
+            <td class="tablet number">2</td>
+            <td><b>Современный вариант</b> </td>
+            <td class="tablet">(с мытьём головы)</td>
+            <td>1 500 руб.</td>
+            <tr class="prices__mobile">
+              <td>(с мытьём головы)</td>
+            </tr>
+          </tr>
+          <tr>
+            <td class="tablet number">3</td>
+            <td><b>Индивидуальный подход</b> </td>
+            <td class="tablet">(с мытьём головы)</td>
+            <td>2 000 руб.</td>
+            <tr class="prices__mobile">
+              <td>(с мытьём головы)</td>
+            </tr>
+          </tr>
+          <tr>
+            <td class="tablet number">4</td>
+            <td><b>Бритьё головы</b> </td>
+            <td class="tablet">(без мытья)</td>
+            <td> 500 руб.</td>
+            <tr class="prices__mobile">
+              <td>(без мытья)</td>
+            </tr>
+          </tr>
+          <tr>
+            <td class="tablet number">5</td>
+            <td><b>Бритьё головы</b> </td>
+            <td class="tablet">(с мытьём головы)</td>
+            <td>1 000 руб.</td>
+            <tr class="prices__mobile">
+              <td>(с мытьём головы)</td>
+            </tr>
+          </tr>
+        </table>
+        <div class="hours">
+          <div class="hours__image">
+            <img src="assets/images/clock.png">
+          </div>
+          <div class="hours__text">
+              C 10:00 до 14:00 <br>
+              скидка 20%
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+@@include('./templates/footer.html')
